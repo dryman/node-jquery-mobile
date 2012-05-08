@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+    <link rel="stylesheet" href="/css/jquery.toastmessage.css" />
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+    <script type="text/javascript" src="/jquery.toastmessage.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("form").submit(function(event){
+          event.preventDefault();
+          $.get("/send",{text: $("form").find('input[name="text"]').val()});
+        });
+      });
+    </script>
+    <title>Mobile Notify</title>
+  </head>
+  <body>
+    <div data-role="page">
+      <div data-role="header">
+        <h1>Control center</h1>
+      </div><!-- /header -->
+
+      <div data-role="content">       
+        <form action="/send" method="get" data-ajax="false">
+        <label for="basic">Send Message:</label>
+        <input type="text" name="text" data-mini="true" data-ajax="true">
+        <input type="submit" name="submit" value="go"/>
+        </form>
+      </div><!-- /content -->
+
+    </div><!-- /page -->
+</body>
+</html>

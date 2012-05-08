@@ -59,6 +59,7 @@ var channel = new function () {
 
 fu.listen(Number(process.env.PORT ||PORT), HOST);
 fu.get("/", fu.staticHandler("index.html"));
+fu.get("/control", fu.staticHandler("control.html"));
 fu.get("/client.js", fu.staticHandler("client.js"));
 fu.get("/jquery.toastmessage.js", fu.staticHandler("jquery.toastmessage.js"));
 fu.get("/css/jquery.toastmessage.css", fu.staticHandler("css/jquery.toastmessage.css"));
