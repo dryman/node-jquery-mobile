@@ -1,0 +1,27 @@
+# Node.js on jQuery Mobile
+
+This is a quick demo for sending server side notification to mobile clients.
+
+## Installation
+
+1. Get [node.js][node] for your platform.
+
+2. Download this project on your machine.
+
+3. `node server.js` and view the notification on [0.0.0.0:8001](0.0.0.0:8001),
+   and control it via [0.0.0.0:8001](0.0.0.0:8001/control).
+
+## Usage
+
+1. The root of the web app looks like this: 
+![root page](https://github.com/dryman/node-jquery-mobile/raw/master/images/root.png)
+
+![control page](https://github.com/dryman/node-jquery-mobile/raw/master/images/control.png)
+
+![Sending message](https://github.com/dryman/node-jquery-mobile/raw/master/images/send.png)
+
+![Receiving message](https://github.com/dryman/node-jquery-mobile/raw/master/images/recv.png)
+
+
+
+[node]: http://nodejs.org/
