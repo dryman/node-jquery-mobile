@@ -13,12 +13,19 @@ This is a quick demo for sending server side notification to mobile clients.
 
 ## Usage
 
-1. The root of the web app looks like this: 
+Root page:
+
 ![root page](https://github.com/dryman/node-jquery-mobile/raw/master/images/root.png)
+
+Control page:
 
 ![control page](https://github.com/dryman/node-jquery-mobile/raw/master/images/control.png)
 
+Sending message:
+
 ![Sending message](https://github.com/dryman/node-jquery-mobile/raw/master/images/send.png)
+
+Receiving message:
 
 ![Receiving message](https://github.com/dryman/node-jquery-mobile/raw/master/images/recv.png)
 
